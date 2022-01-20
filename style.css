@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* Variables */
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Dark-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+/* Global Rules */
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  background: url(images/bg-pattern-top.svg) right 48vw bottom 40vh no-repeat,
+    url(images/bg-pattern-bottom.svg) left 45vw top 44vh no-repeat;
+  background-color: var(--Dark-cyan);
+}
+html {
+  font-size: 10px;
+}
+p {
+  color: var(--Dark-gray);
+  font-size: 1.2rem;
+}
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ======================== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.container .card {
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.container .card .card__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.container .card .card__profile .img__holder {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  -webkit-transform: translate(-50%, -55%);
+  -moz-transform: translate(-50%, -55%);
+  -ms-transform: translate(-50%, -55%);
+  -o-transform: translate(-50%, -55%);
+}
+.container .card .card__profile img {
+  display: block;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.container .card .card__profile .info {
+  margin-top: 7rem;
+}
+.container .card .card__profile .info h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--Dark-blue);
+}
+.container .card .card__profile .info span {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+}
+.container .card .card__profile p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: var(--Dark-grayish-blue);
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 4rem;
+  border-top: 1px solid rgba(150, 150, 150, 0.2);
+}
+.card__footer h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--Dark-blue);
+  margin-bottom: 5px;
+}
+.card__footer p {
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #ccc;
+  transition: all 0.5s;
+}
+.attribution a:hover {
+  color: #eee;
+}
